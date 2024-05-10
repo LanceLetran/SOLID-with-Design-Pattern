@@ -5,13 +5,7 @@ public class Student {
         this.studentId = studentId;
     }
 
-    public void borrowResource(LibraryResource resource) {
-        System.out.println("Attempting to borrow: " + resource.getTitle());
-        resource.checkoutResource();
-    }
-
-    public void returnResource(LibraryResource resource) {
-        System.out.println("Returning: " + resource.getTitle());
-        resource.returnResource();
+    public String getStudentId() {
+        return studentId;
     }
 }
